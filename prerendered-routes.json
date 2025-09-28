@@ -1,8 +1,8 @@
 {
   "routes": {
-    "/contact": {},
-    "/home": {},
-    "/portfolio": {},
-    "/resume": {}
+    "/emPortfolio/contact": {},
+    "/emPortfolio/home": {},
+    "/emPortfolio/portfolio": {},
+    "/emPortfolio/resume": {}
   }
 }
