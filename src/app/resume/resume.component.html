@@ -1,0 +1,112 @@
+<div class="container text-center">
+  <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
+  <div class="pb-2">
+<accordion [isAnimated]="true" class="shadow">
+    <accordion-group [(isOpen)]="isSkillsOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;"></div>
+        <div class="btn-link">Skills</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+          <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div class="row" style="text-align: left;">
+        <div class="col">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Ruby</li>
+            <li>Shell</li>
+            <li>Bash</li>
+            <li>Typescript</li>
+          </ul>
+          <h4>SQL / NoSQL</h4>
+          <ul>
+            <li>MySQL</li>
+            <li>Postgres</li>
+            <li>MongoDB</li>
+            <li>Firestore</li>
+            <li>R</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Express JS</li>
+            <li>Django</li>
+            <li>Spring</li>
+            <li>React</li>
+            <li>Angular</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Deployment</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Digital Ocean</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>NginX</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isEducationOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;"></div>
+        <div class="btn-link">Education</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isEducationOpen" style="color: white;">></div>
+          <div *ngIf="isEducationOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left;">
+        <h2 class="mb-0">Bachelor of Science in Computer Science</h2>
+        <h3 class="text-primary">California State Polytechnic University</h3>
+        <ul>
+          <li>Graduated from Cal Poly Pomona on May 2025</li>
+          <li>Graduated with a 3.8 GPA</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isCoursesOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;"></div>
+        <div class="btn-link">Relevant Courses</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isCoursesOpen" style="color: white;">></div>
+          <div *ngIf="isCoursesOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left">
+        <h2 class="mb-0">Courses: </h2>
+        <ul>
+          <li>CS 4800: Software Engineering</li>
+          <li>CS 2450: User Interface Design and Programming</li>
+          <li>CS 3560: OOP Design and Programming</li>
+          <li>CS 4350: Database Systems</li>
+          <li>CS 3800: Computer Networking</li>
+          <li>CS 2610: Intro to Cyber Security</li>
+          <li>CS 4600: Cryptography and Information Security</li>
+          <li>CS 3310: Design and Analysis of Algorithms</li>
+          <li>CS 3700: Parallel Processing</li>
+          <li>CS 2400: Data Structures and Advanced Programming</li>
+          <li>CS 4800: STA 2260: Probability and Statistics</li>
+          <li>CS 4750: Mobile Development</li>
+        </ul>
+      </div>
+    </accordion-group>
+  </accordion>
+  </div>
+  
+</div>

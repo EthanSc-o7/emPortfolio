@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg shadow ">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img src="/pfp.jpg" alt="Profile Pic" width="256" height="256" class="rounded-circle" >
+        <p>Self reliant and driven graduate who's always willing to learn and can adapt to fill any role. Looking for experience to challenge myself and improve where I can.</p>
+      </div>
+    </div>
+    <div class="col-lg shadow ">
+      <div class="text-center">
+        <h2>Featured project</h2>
+        <h4>{{featuredProject.name}}</h4>
+      </div>
+
+<carousel>
+
+    <div *ngFor="let picture of featuredProject.pictures">
+        <slide><img id="projpics" src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+    </div>
+  </carousel>
+  <p class="mt-2">{{featuredProject.summary}}</p>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="row">
+     <div class="col-lg shadow ">
+      <div id="personalProjects" class="text-center">
+        <h2>Upcoming Projects</h2>
+        <h5>Create An API</h5>
+        <h5>Create Personalized Text Editor</h5>
+        <h5>Secret Full Stack Application</h5>
+        <h5>Secret Mobile App</h5>
+        
+      </div>
+    </div>
+    <div class="col-lg shadow ">
+      <div id="roadmap" class="text-center">
+        <h2>Improvement Roadmap</h2>
+        <h5>Spring/Django Project</h5>
+        <h5>Aquire more experience with docker, kubernetes and helm</h5>
+        <h5>Improve Shell Scripting</h5>
+        <h5>Prepare for comptia certification exams</h5>
+        <h5>Mobile project with Flutter/React</h5>
+        <h5>Improve UI/UX Skills</h5>
+      </div>
+  </div>
+</div>
